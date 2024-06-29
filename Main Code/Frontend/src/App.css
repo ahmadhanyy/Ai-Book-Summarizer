@@ -1,0 +1,29 @@
+@import './components/Navbar/Navbar.scss';
+@import './components/Footer/Footer.scss';
+@import './components/UploadForm/UploadForm.scss';
+@import './pages/HomePage/HomePage.scss';
+@import './pages/AboutPage/AboutPage.scss';
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f6f6f6;
+}
+

@@ -1,0 +1,24 @@
+.summary-display {
+    background-color: #03022b;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+  
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+      border-bottom: 1px solid #ffd900;
+      color: #ffffff;
+    }
+  
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #ffffff;
+    }
+  }
+  
