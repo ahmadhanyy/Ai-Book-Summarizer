@@ -100,7 +100,7 @@ def split_book(book, paragraph_max_words = 1024):
 def summarize_book(book):
     # Split the book into paragraphs
     splited_book = split_book(book)
-    if len(splited_book) <= 5: # Base case
+    if len(splited_book) <= 7: # Base case
         result_book = " ".join(splited_book)
         return result_book
     else:
@@ -110,7 +110,7 @@ def summarize_book(book):
             # Tokenize the input text
             inputs = tokenizer(splited_book[i], return_tensors="pt", max_length=1024, truncation=True)
             # Generate summary
-            summary_ids = model.generate(inputs.input_ids.to(model.device), max_length=256, min_length=40, length_penalty=2.0, num_beams=4, early_stopping=False, no_repeat_ngram_size=3)
+            summary_ids = model.generate(inputs.input_ids.to(model.device), max_length=256, min_length=40, length_penalty=2.0, num_beams=5, early_stopping=False, no_repeat_ngram_size=3)
             # Decode the summary tokens
             summary = tokenizer.decode(summary_ids[0], skip_special_tokens=True)
             # Add to summary list
