@@ -21,7 +21,7 @@ else:
     device = torch.device("cpu")
 
 # Load The Model & Tokenizer
-model_checkpoint = r"ahmadhany22/SF-FineTuned-T5"
+model_checkpoint = r"ahmadhany22/SF-FineTuned-T5-35"
 tokenizer = AutoTokenizer.from_pretrained(model_checkpoint)
 model = AutoModelForSeq2SeqLM.from_pretrained(model_checkpoint).to(device)
 
