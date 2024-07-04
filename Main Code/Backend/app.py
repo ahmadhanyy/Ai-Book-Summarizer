@@ -6,6 +6,7 @@ import torch
 import os
 import tempfile
 from flask_cors import CORS
+from googletrans import Translator
 
 app = Flask(__name__)
 
